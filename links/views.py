@@ -1,7 +1,8 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.utils import timezone
 
 from links.forms import LinkCreateForm
+from links.models import Link
 
 
 def add_link(request):
@@ -15,3 +16,12 @@ def add_link(request):
     else:
         form = LinkCreateForm()
         return render(request, 'links/add_link.html', {'form': form})
+
+
+def link_view(request, slug):
+    link_obj = get_object_or_404(Link, slug=slug)
+    context = {
+        'text': link_obj.text,
+        'timestamp': link_obj.timestamp
+    }
+    return render(request, 'link_page.html', context)
