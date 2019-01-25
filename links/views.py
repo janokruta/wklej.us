@@ -18,7 +18,7 @@ def add_link(request):
         return render(request, 'links/add_link.html', {'form': form})
 
 
-def link_view(request, slug):
+def link_detail(request, slug):
     link_obj = get_object_or_404(Link, slug=slug)
     context = {
         'text': link_obj.text,
