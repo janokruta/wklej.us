@@ -11,7 +11,7 @@ class Link(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def get_absolute_url(self):
-        return reverse('link', kwargs={'slug': self.slug})
+        return reverse('link_detail', kwargs={'slug': self.slug})
 
 
 @receiver(models.signals.pre_save, sender=Link)
