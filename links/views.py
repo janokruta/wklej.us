@@ -24,4 +24,4 @@ def link_detail(request, slug):
         'text': link_obj.text,
         'timestamp': link_obj.timestamp
     }
-    return render(request, 'link_page.html', context)
+    return render(request, 'links/link_detail.html', context)
