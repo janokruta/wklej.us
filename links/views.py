@@ -14,4 +14,4 @@ def add_link(request):
             return redirect(link_obj.get_absolute_url())
     else:
         form = LinkCreateForm()
-        return render(request, 'add_link.html', {'form': form})
+        return render(request, 'links/add_link.html', {'form': form})
