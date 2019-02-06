@@ -1,0 +1,27 @@
+/*
+ ========================================================
+ This pattern is downloaded from www.subtlepatterns.com
+ If you need more, that's where to get'em.
+ ========================================================
+*/
+
+body {
+  font-family: 'Dosis', sans-serif;
+  background-image: url('../bg/topography.png');
+}
+
+a {
+  text-decoration: none !important;
+  color: #000;
+}
+
+a:hover {
+  color: #333;
+}
+
+#link-detail {
+  padding: 8px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #28a745;
+}

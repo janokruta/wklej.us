@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
-
 {% block content %}
   <form method="post">
     {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Dodaj</button>
+    <textarea class="form-control" name="text" rows="14" required id="id_text"></textarea>
+    <button class="btn btn-success mt-2 w-100" type="submit">Dodaj</button>
   </form>
 {% endblock %}
