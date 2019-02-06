@@ -22,6 +22,7 @@ def link_detail(request, slug):
     link_obj = get_object_or_404(Link, slug=slug)
     context = {
         'text': link_obj.text,
+        'slug': slug,
         'timestamp': link_obj.timestamp
     }
     return render(request, 'links/link_detail.html', context)
