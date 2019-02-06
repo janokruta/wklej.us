@@ -10,6 +10,9 @@ class Link(models.Model):
     text = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return self.slug
+
     def get_absolute_url(self):
         return reverse('link_detail', kwargs={'slug': self.slug})
 
