@@ -1,9 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
   <a href="/"><h1 class="font-weight-bold my-4 text-center">wklej<span class="text-success">.</span>us</h1></a>
-  <form method="post">
+  <form method="post" id="add_link">
     {% csrf_token %}
     <textarea id="id_text" class="form-control mono_text" name="text" rows="14" required wrap="hard"></textarea>
-    <button class="btn btn-success mt-2 w-100" type="submit">Dodaj</button>
   </form>
+  <button class="btn btn-success mt-2 w-100" onclick="checkText()">Dodaj</button>
+  <script>
+    function checkText() {
+      const text = document.getElementById('id_text').value;
+      if (text.trim()) {
+        document.getElementById('add_link').submit();
+      }
+    }
+  </script>
 {% endblock %}
