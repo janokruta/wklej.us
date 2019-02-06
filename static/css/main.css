@@ -1,3 +1,11 @@
+/*
+ ========================================================
+ This pattern is downloaded from www.subtlepatterns.com
+ If you need more, that's where to get'em.
+ ========================================================
+*/
+
 body {
   font-family: 'Dosis', sans-serif;
+  background-image: url('../bg/topography.png');
 }
