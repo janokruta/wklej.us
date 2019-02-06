@@ -25,3 +25,7 @@ a:hover {
   background: #fff;
   border: 1px solid #28a745;
 }
+
+.mono_text {
+  font-family: 'Ubuntu Mono', monospace;
+}

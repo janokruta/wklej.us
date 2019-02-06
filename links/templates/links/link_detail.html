@@ -2,7 +2,7 @@
 
 {% block content %}
   <div id="link-detail">
-  {{ text|linebreaks }}
+  <pre class="mono_text">{{ text|linebreaksbr }}</pre>
   <br>
   <br>
   Utworzono {{ timestamp|date }}, {{ timestamp|time }}
