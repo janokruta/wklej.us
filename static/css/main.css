@@ -28,4 +28,5 @@ a:hover {
 
 .mono_text {
   font-family: 'Ubuntu Mono', monospace;
+  font-size: 100% !important;
 }
