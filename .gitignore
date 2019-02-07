@@ -10,3 +10,4 @@ static_cdn/
 db.sqlite3
 
 venv/
+wklejus/settings_local.py
