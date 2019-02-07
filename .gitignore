@@ -12,3 +12,4 @@ db.sqlite3
 venv/
 wklejus/settings_local.py
 manage.py
+.env
