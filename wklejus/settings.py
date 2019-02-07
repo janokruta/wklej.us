@@ -24,7 +24,7 @@ SECRET_KEY = 'tx*_n0!hrhs%83n=p8b)lwz94-^&(7g)%r0d+dqy3n@-$7d!(s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '192.168.0.12']
+ALLOWED_HOSTS = ['wklej.us', '46.101.214.46', 'localhost']
 
 # Application definition
 
