@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-  <a href="/"><h1 class="font-weight-bold my-4 text-center">wklej<span class="text-success">.</span>us</h1></a>
+  <h1 class="font-weight-bold my-4 text-center"><a href="/">wklej<span class="text-success">.</span>us</a></h1>
   <form method="post" id="add_link">
     {% csrf_token %}
     <textarea id="id_text" class="form-control mono_text" name="text" rows="14" required wrap="hard"></textarea>
