@@ -127,4 +127,4 @@ STATICFILES_DIRS = [
 ]
 
 # Admin secret url
-ADMIN_URL = os.environ['ADMIN_URL']
+ADMIN_URL = os.environ.get('ADMIN_URL', '')
