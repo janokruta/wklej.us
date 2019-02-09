@@ -125,3 +125,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn', 'static_root')
 STATICFILES_DIRS = [
     'static',
 ]
+
+# Admin secret url
+ADMIN_URL = os.environ['ADMIN_URL']
