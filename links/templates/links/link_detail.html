@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
-
 {% block content %}
   <h1 class="font-weight-bold my-4 text-center"><a href="/">wklej<span class="text-success">.</span>us</a>/{{ slug }}</h1>
   <div id="link-detail" class="shadow">
     <pre class="mono_text ml-2">{{ text|linebreaksbr }}</pre>
-    <br>
-    <br>
+    <br><br>
     Dodano {{ timestamp|date }}, {{ timestamp|time }}
   </div>
 {% endblock %}
