@@ -5,7 +5,7 @@
     {% csrf_token %}
     <textarea id="id_text" class="form-control mono_text" name="text" rows="14" required wrap="hard"></textarea>
   </form>
-  <button class="btn btn-success mt-2 w-100" onclick="checkText()">Dodaj</button>
+  <button class="btn btn-success mt-2 w-100" onclick="checkText()">dodaj</button>
   <script>
     function checkText() {
       const text = document.getElementById('id_text').value;
