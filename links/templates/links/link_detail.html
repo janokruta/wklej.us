@@ -2,8 +2,20 @@
 {% block content %}
   <h1 class="font-weight-bold my-4 text-center"><a href="/">wklej<span class="text-success">.</span>us</a>/{{ slug }}</h1>
   <div id="link-detail" class="shadow p-1">
-    <pre class="mono_text ml-2">{{ text|linebreaksbr }}</pre>
+    <pre id="text" class="mono_text ml-2">{{ text|linebreaksbr }}</pre>
     <br><br>
     Dodano {{ timestamp|date }}, {{ timestamp|time }}
   </div>
+  <button id="copy-btn" class="btn btn-outline-success mt-2 w-100" onclick="copyText()">skopiuj tekst do schowka</button>
+  <script>
+    function copyText() {
+      const range = document.createRange();
+      range.selectNode(document.getElementById('text'));
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand('copy');
+      window.getSelection().removeAllRanges();
+      document.getElementById('copy-btn').innerHTML = 'skopiowano';
+    }
+  </script>
 {% endblock %}
