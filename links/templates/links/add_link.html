@@ -5,7 +5,19 @@
     {% csrf_token %}
     <textarea id="id_text" class="form-control mono_text" name="text" rows="14" required wrap="hard"></textarea>
   </form>
-  <button class="btn btn-success mt-2 w-100" onclick="checkText()">dodaj</button>
+  <div class="d-flex justify-content-between mt-2">
+    <div class="form-group form-inline mb-0">
+      <label for="sel1">wygaśnie za:</label>
+      <select id="sel1" class="form-control ml-3">
+        <option>1 dzień</option>
+        <option>7 dni</option>
+        <option selected>14 dni</option>
+        <option>30 dni</option>
+        <option>nigdy</option>
+      </select>
+    </div>
+    <button class="btn btn-success px-5" onclick="checkText()">dodaj</button>
+  </div>
   <script>
     function checkText() {
       const text = document.getElementById('id_text').value;
